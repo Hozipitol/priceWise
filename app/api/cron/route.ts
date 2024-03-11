@@ -24,8 +24,8 @@ export async function GET(request: Request){
 
                 const updatedPriceHistory  = [
                     ...currentProduct.priceHistory,
-                    {price: scrapedProduct.currentPrice}
-                ]
+                    {price: scrapedProduct.currentPrice},
+                ];
                 const product = {
                     ...scrapedProduct,
                     priceHistory: updatedPriceHistory,
@@ -33,13 +33,13 @@ export async function GET(request: Request){
                     highestPrice: getHighestPrice(updatedPriceHistory),
                     averagePrice: getAveragePrice(updatedPriceHistory),
     
-                }
+                };
     
             const updatedProduct = await Product.findOneAndUpdate(
                 {url: product.url},
                 product);
 
-                const emailNotifType = getEmailNotifType(scrapedProduct, currentProduct)
+                const emailNotifType = getEmailNotifType(scrapedProduct, currentProduct);
                 if(emailNotifType && updatedProduct.users.length > 0){
                     const productInfo = {
                         title: updatedProduct.title,
@@ -51,8 +51,9 @@ export async function GET(request: Request){
 
                 await sendEmail(emailContent, userEmails);
 
-                return updatedProduct;
+                
                 } 
+                return updatedProduct;
             })
         );
         return NextResponse.json({
