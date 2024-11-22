@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Based on your request and the information provided, here's a README for your Next.js project:
 
-## Getting Started
+# PriceWise
 
-First, run the development server:
+PriceWise is a web application that allows users to track product prices on Amazon. Here's a brief description of its functionality:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Users can input Amazon product links to track prices.
+- The application provides current product prices.
+- It displays historical price data, including the lowest and highest prices.
+- PriceWise shows discounted prices when available.
+- This tool helps users make informed purchasing decisions by providing price history and discount information for Amazon products.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application is built using Next.js and is hosted on Vercel.
+
+## 🚀 Live Demo
+
+Check out the live demo: [PriceWise](https://price-wise-plum.vercel.app/)
+
+## 🛠️ Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Vercel (for deployment)
+
+## 🏁 Getting Started
+
+To run this project locally:
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+3. Run the development server:
+   ```
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## 📝 Usage
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📚 Learn More
 
-## Learn More
+To learn more about Next.js, check out these resources:
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/yourusername/price-wise/issues) if you want to contribute.
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Citations:
+[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/41869197/d7f5c3df-8348-49ec-9e2d-d80e524d7b41/Huzefa_resume.pdf
